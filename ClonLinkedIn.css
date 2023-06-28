@@ -1,34 +1,114 @@
 *{
-    background-color: rgb(26, 25, 25);
-    color: azure;
+    background-color: rgb(20, 20, 20);
+    color: rgb(230, 226, 176);
+    list-style: none;
 }
 
 header{
     width: auto;
-    height: 50px;
+    height: 100px;
+    color: rgb(151, 214, 43);
+    list-style: none;
+    
 }
 
 header nav{
     display: flex;
     justify-content: flex-end;
+    
 }
 
 header nav .nav-shortcuts{
     width: 700px;
     height: auto;
     display: flex;
-    list-style: none;
+    
     justify-content: space-between;
     align-items: center;
 }
 
 header nav .premium-container{
     width: 23%;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    
 }
 
 a{
     text-decoration: none;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
+
+header nav .nav-shortcuts .icon-inicio{
+    background-image: url(https://www.shutterstock.com/image-vector/flat-paper-cut-style-icon-600w-598926173.jpg) ; /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+}
+
+header nav .nav-shortcuts .icon-mi_red{
+    background-image: url(https://www.shutterstock.com/image-vector/people-icon-vector-logo-design-600w-1511927708.jpg); /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+}
+
+header nav .nav-shortcuts .icon-empleos{
+    background-image: url(https://www.shutterstock.com/image-vector/briefcase-vector-icon-bagportfolio-symbol-600w-1171068547.jpg); /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+}
+
+header nav .nav-shortcuts .icon-mensajes{
+    background-image: url(https://www.shutterstock.com/image-vector/chat-icon-symbol-vector-illustration-600w-1589556166.jpg); /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    
+}
+
+header nav .nav-shortcuts .icon-notificaciones{
+    background-image: url(https://www.shutterstock.com/image-vector/notifications-bell-icon-vector-illustration-600w-1197325894.jpg); /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    
+}
+
+header nav .nav-shortcuts .icon-notificaciones a{
+    justify-content: center;
+}
+header nav .nav-shortcuts .icon-yo{
+    background-image: url(https://media.licdn.com/dms/image/C5603AQGRPBmfBd_wCQ/profile-displayphoto-shrink_100_100/0/1651290113289?e=1693440000&v=beta&t=cVV7YybL8UNAOwI02a-7yWE_l2FmSyUNY-F9uFEBYuc); /*URL de la imagen/ícono del menú de los puntitos*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+
+}
+
+header nav section .linkedIn-icon{
+    
+    justify-content: space-between;
+    background-image: url(https://www.shutterstock.com/image-vector/square-blue-colour-white-background-600w-2095893022.jpg);
+    
+}
+
+
