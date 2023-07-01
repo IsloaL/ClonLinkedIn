@@ -116,7 +116,26 @@ header nav section .linkedIn-icon{
 main{
     background-color: aqua;
     display: flex;
-    justify-content: space-between
+  
+}
+
+main .principal{
+    background-color: rgb(21, 0, 255);
+    display: flex;
+    justify-content: space-around;
+}
+
+main .center{ /*no sale en la página*/
+    background-color: blueviolet;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+main .news{ /*no sale en la página*/
+    justify-content: space-between;
+    background-color: darkblue;
+    display: flex;
 }
 
 main .principal .profile .mi-info{
@@ -126,8 +145,6 @@ main .principal .profile .mi-info{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
-
 }
 
 main .principal .profile .mi-info #nombre-titulo{
@@ -146,6 +163,13 @@ main .principal .profile .mi-info #conexiones{
     text-align: justify;
 }
 
+.recientes{
+    text-align: justify;
+    padding: 30px 15px;
+    text-align: justify;
+
+}
+
 main .principal .profile .mi-info #herramientas{
     padding: 30px 15px;
     text-align: justify;
@@ -161,3 +185,11 @@ h3{
     align-items: center;
     align-self: auto;
 }
+
+.center{
+    width: 50%;
+    background-color: rgb(43, 226, 55);
+    display: flex;
+    
+}
+
