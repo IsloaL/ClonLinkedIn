@@ -181,9 +181,21 @@ main .principal .profile .mi-info #nombre-titulo img{
 }
 
 main .principal .profile .mi-info #conexiones{
+    display: flex;
+    padding: 30px 15px;
+    width: auto;
+}
+
+main .principal .profile .mi-info #conexiones #texto{
     padding: 30px 15px;
     text-align: justify;
     width: auto;
+}
+
+main .principal .profile .mi-info #conexiones #numeros{
+    padding: 30px 15px;
+    text-align: right;
+    width: 50px;
 }
 
 .recientes{
