@@ -140,7 +140,7 @@ header .finder{
 }
 
 main{
-    background-color: aqua;
+    background-color: rgb(0, 21, 255);
     display: flex;
     justify-content: center;
 }
@@ -235,6 +235,8 @@ h3{
 
 .center .mis-publicaciones{
     display: flex;
+    /*esto es lo que tenemos que dividir para que en una línea quede todo para que yo haga una publicación y abajo estén las publicaciones de mis contactos*/
+
     
 }
 
@@ -251,7 +253,7 @@ h3{
 main .main-input{
     width: 100%;
     display: flex;
-    background-color: crimson;
+    background-color: rgb(44, 40, 41);
     align-items: center;
     
 
