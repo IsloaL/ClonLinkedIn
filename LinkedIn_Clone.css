@@ -1,4 +1,5 @@
-*{
+/* Estilos generales */
+* {
     background-color: rgb(13, 13, 13);
     color: rgb(230, 226, 176);
     list-style: none;
@@ -11,11 +12,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #262528;
-    color: rgb (230, 226, 176);
+    color: rgb(230, 226, 176);
 }
 
 header {
-    background-color:rgb(13, 13, 13);
+    background-color: rgb(13, 13, 13);
     color: rgb(100, 183, 231);
     padding: 10px 20px;
     display: flex;
@@ -30,7 +31,7 @@ header .lnkdn_img {
 }
 
 header .lnkdn_img img {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
+    width: 50px;
     height: 40px;
     margin-right: 10px;
 }
@@ -116,7 +117,7 @@ header nav ul li a {
 .main-content {
     background-color: rgb(50, 51, 52);
     display: grid;
-    grid-row: 1fr 2fr 1fr;
+    grid-template-rows: auto;
     padding: 20px;
     border-radius: 7px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -142,11 +143,9 @@ header nav ul li a {
     height: 90px;
 }
 
-
 .feed {
     height: 550px;
 }
-
 
 .button-group {
     margin-left: auto;
@@ -163,17 +162,6 @@ header nav ul li a {
     cursor: pointer;
 }
 
-.contacts-publication {
-    display: flex;
-    align-items: center;
-    height: 90px;
-}
-
-.posted-text {
-    display: flex;
-    height: 90px;
-}
-
 .main-content .post .publication-area img {
     width: 30px;
     display: flexbox;
@@ -182,18 +170,45 @@ header nav ul li a {
     padding: 5px;
 }
 
-.main-content .post .feed-from-people img {
-    width: 30px;
-    display: flexbox;
+.contacts-publication {
+    display: flex;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts-publication img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    padding: 5px;
+    margin-right: 10px;
+}
+
+.contacts-publication .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-publication .contact-info .time {
+    font-size: 12px;
+    color: gray;
+}
+
+.posted-text {
+    margin-top: 10px;
 }
 
 .feed-from-people {
-    display: flex;
-    align-items: center;
-    height: auto;
+    background-color: #35343c;
+    
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.feed-from-people p {
+    margin-top: 5px;
+    color: #e6e2b0;
 }
 
 .post button:hover {
@@ -208,12 +223,12 @@ header nav ul li a {
     margin-top: 0;
 }
 
-.profile, .shortcuts, .extra, .feed, .widget {
+.profile, .shortcuts, .feed, .widget {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
 }
 
-body .container .sidebar .recientes{
+body .container .sidebar .recientes {
     text-align: justify;
 }
 
@@ -228,11 +243,46 @@ body .container .sidebar #conexiones #texto {
     text-align: justify;
     width: max-content;
     list-style-type: none;
-
 }
 
 body .container .sidebar #conexiones #numeros {
     padding: 30px 15px;
     text-align: right;
     width: 50px;
+}
+
+.widgets .time {
+    font-size: 12px;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .post input {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts-publication img {
+        width: 40px;
+        height: 40px;
+    }
+
+    
+
 }
