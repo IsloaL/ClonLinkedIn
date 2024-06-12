@@ -1,16 +1,25 @@
+*{
+    background-color: rgb(13, 13, 13);
+    color: rgb(230, 226, 176);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #262528;
+    color: rgb (230, 226, 176);
 }
 
 header {
-    background-color: #35343c;
+    background-color:rgb(13, 13, 13);
     color: rgb(100, 183, 231);
     padding: 10px 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,20 +30,20 @@ header .lnkdn_img {
 }
 
 header .lnkdn_img img {
-    width: 40px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 40px;
     margin-right: 10px;
 }
 
 header .lnkdn_img input {
     width: 200px;
-    height: 30px;
+    height: 10px;
     padding: 10px;
     border-radius: 15px;
     border: 1px solid #ccc;
 }
 
-header h1, h2, h3, h4 {
+header h1, h2 {
     margin: 5px;
     text-align: center;
 }
@@ -73,7 +82,7 @@ header nav ul li a {
 }
 
 .sidebar, .widgets {
-    background-color: rgb(50, 80, 101);
+    background-color: rgb(50, 51, 52);
     padding: 20px;
     border-radius: 7px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,7 +114,7 @@ header nav ul li a {
 }
 
 .main-content {
-    background-color: rgb(50, 80, 101);
+    background-color: rgb(50, 51, 52);
     display: grid;
     grid-row: 1fr 2fr 1fr;
     padding: 20px;
@@ -115,6 +124,7 @@ header nav ul li a {
 
 .post {
     margin-bottom: 20px;
+    height: 90px;
 }
 
 .post input {
@@ -129,7 +139,14 @@ header nav ul li a {
 .publication-area {
     display: flex;
     align-items: center;
+    height: 90px;
 }
+
+
+.feed {
+    height: 550px;
+}
+
 
 .button-group {
     margin-left: auto;
@@ -146,12 +163,37 @@ header nav ul li a {
     cursor: pointer;
 }
 
+.contacts-publication {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.posted-text {
+    display: flex;
+    height: 90px;
+}
+
 .main-content .post .publication-area img {
     width: 30px;
     display: flexbox;
     align-items: center;
     border-radius: 50%;
     padding: 5px;
+}
+
+.main-content .post .feed-from-people img {
+    width: 30px;
+    display: flexbox;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.feed-from-people {
+    display: flex;
+    align-items: center;
+    height: auto;
 }
 
 .post button:hover {
@@ -171,6 +213,10 @@ header nav ul li a {
     padding-bottom: 20px;
 }
 
+body .container .sidebar .recientes{
+    text-align: justify;
+}
+
 body .container .sidebar #conexiones {
     display: flex;
     padding: 30px 15px;
@@ -180,7 +226,9 @@ body .container .sidebar #conexiones {
 body .container .sidebar #conexiones #texto {
     padding: 30px 15px;
     text-align: justify;
-    width: auto;
+    width: max-content;
+    list-style-type: none;
+
 }
 
 body .container .sidebar #conexiones #numeros {
