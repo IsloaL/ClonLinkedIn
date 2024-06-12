@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     background-color: rgb(13, 13, 13);
     color: rgb(230, 226, 176);
@@ -282,7 +282,4 @@ body .container .sidebar #conexiones #numeros {
         width: 40px;
         height: 40px;
     }
-
-    
-
 }
